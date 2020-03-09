@@ -30,8 +30,7 @@ class Details extends React.Component {
       title,
       img_url,
       description,
-      lifespan,
-      speed,
+      age,
       weight,
       facts
     } = itemForDetailPage;
@@ -47,26 +46,22 @@ class Details extends React.Component {
         <div className="details">
           <span onClick={this.props.history.goBack} className="back">
             <img src={Back} alt="back" width={20} />
-            Back to Home
+            Voltar para o início
           </span>
           <div className="detail-box">
             <h2>{title}</h2>
             <p>{description}</p>
           </div>
           <div className="detail-box">
-            <h3>Lifespan</h3>
-            <p>{lifespan}</p>
+            <h3>Idade</h3>
+            <p>{age}</p>
           </div>
           <div className="detail-box">
-            <h3>Speed</h3>
-            <p>{speed}</p>
-          </div>
-          <div className="detail-box">
-            <h3>Weight</h3>
+            <h3>Peso</h3>
             <p>{weight}</p>
           </div>
           <div className="detail-box">
-            <h3>Interesting facts</h3>
+            <h3>Fatos interessantes</h3>
             <ul>
               {facts &&
                 facts.map((item, i) => (
