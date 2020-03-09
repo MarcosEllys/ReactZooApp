@@ -59,7 +59,7 @@ class Home extends React.Component {
                           ? this.state.styles
                           : {}
                       }
-                      to={`/details/${item.id}`}
+                      to={`${process.env.PUBLIC_URL}/details/${item.id}`}
                       id={item.id}
                       onClick={() => context.getCords(item.id)}
                     >

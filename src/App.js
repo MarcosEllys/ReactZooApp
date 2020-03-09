@@ -6,8 +6,8 @@ import Details from "./Pages/Details/Details";
 function App() {
   return (
     <div className="App">
-      <Route exact path="/" component={Home} />
-      <Route path="/details/:itemId" component={Details} />
+      <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+      <Route path={`${process.env.PUBLIC_URL}/details/:itemId`} component={Details} />
     </div>
   );
 }
